@@ -1,0 +1,218 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: $modalBg;
+  transition: opacity 250ms, visibility 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    transform: translate(-50%, -50%);
+    background-color: $colorWhite;
+    box-shadow: $modalShadow;
+    border-radius: 4px;
+  }
+  &__exit {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: $colorWhite;
+    border: $modalExitBorder;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 250ms, color 250ms, box-shadow 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background: $colorBlue;
+      color: $colorWhite;
+      box-shadow: $modalExitShadow;
+    }
+    &:focus {
+      background: $colorBlue;
+      color: $colorWhite;
+      box-shadow: $modalExitShadow;
+    }
+  }
+  &__header {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 2px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $colorBlackText;
+  }
+  &__form {
+    position: relative;
+    display: flex;
+  }
+  &__label {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $colorGrey;
+  }
+  &__input {
+    width: 448px;
+    height: 40px;
+    border: $modalInputBorder;
+    border-radius: 4px;
+    padding: 0;
+    padding-left: 40px;
+    transition: outline 250ms, border 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+      outline: $colorBlue;
+      border: 1px solid $colorBlue;
+    }
+  }
+  &__textarea {
+    resize: none;
+    width: 448px;
+    height: 120px;
+    border: $modalTextareaBorder;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-left: 16px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    transition: outline 250ms, border 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &::placeholder {
+      color: $modalTextareaPlaceholder;
+    }
+    &:focus {
+      outline: $colorBlue;
+      border: 1px solid $colorBlue;
+    }
+  }
+  &__svg {
+    position: absolute;
+    left: 55px;
+    top: 42px;
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus-within {
+      fill: $colorBlue;
+    }
+  }
+  &__checkbox-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  &__checkbox-div {
+    width: 16px;
+    height: 15px;
+    position: relative;
+    border: 2px solid $colorBlackText;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-right: 8px;
+    transition: border-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      border-color: $colorBlue;
+    }
+  }
+  &__checkbox {
+    position: absolute;
+    z-index: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 16px;
+    appearance: none;
+    cursor: pointer;
+    &:checked {
+      + {
+        .modal__checkbox-svg {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__checkbox-text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $colorGrey;
+  }
+  &__checkbox-svg {
+    z-index: 102;
+    border-radius: 2px;
+    width: 17px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: $colorWhite;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__button {
+    width: 200px;
+    height: 50px;
+    box-shadow: $modalButtonShadow;
+    border-radius: 4px;
+    background: $colorLightgreyBg;
+    border: $colorLightgreyBg;
+    margin-left: 164px;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    color: $colorBlackText;
+    letter-spacing: 0.06em;
+    transition: background 250ms, color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    &:focus {
+      background: $colorBlue;
+      color: $colorWhite;
+    }
+    &:hover {
+      background: $colorBlue;
+      color: $colorWhite;
+    }
+  }
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

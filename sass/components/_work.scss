@@ -1,0 +1,41 @@
+.work {
+  background-color: $colorWhite;
+  padding-top: 0;
+  &__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: $colorBlackText;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+    margin: 0;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__figure {
+    margin: 0;
+    position: relative;
+    width: 370px;
+    height: 294px;
+    display: flex;
+  }
+  &__figcaption {
+    position: absolute;
+    display: flex;
+    width: 370px;
+    height: 70px;
+    top: 224px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $colorWhite;
+    background: $workFigcaptionBg;
+  }
+}

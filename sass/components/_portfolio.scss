@@ -1,0 +1,112 @@
+.portfolio {
+  background-color: $colorWhite;
+  &__button-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 8px;
+  }
+  &__button {
+    border-radius: 4px;
+    background: $colorLightgreyBg;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: $colorBlackText;
+    letter-spacing: 0.03em;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: 0px;
+    transition: color 250ms, background 250ms, box-shadow 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background: $colorBlue;
+      color: $colorWhite;
+      box-shadow: $portfolioButtonShadow;
+      border-radius: 4px;
+    }
+    &:focus {
+      background: $colorBlue;
+      color: $colorWhite;
+      box-shadow: $portfolioButtonShadow;
+      border-radius: 4px;
+    }
+  }
+  &__items-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 30px;
+  }
+  &__figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      box-shadow: $portfolioFigureShadow;
+      .portfolio__overlay {
+        background: $portfolioFigureBg;
+        transform: translateY(0);
+      }
+    }
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    padding-top: 49px;
+    padding-left: 24px;
+    transition: transform 250ms, background 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__overlay-text {
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: $colorWhite;
+  }
+  &__image {
+    display: block;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 24px;
+    color: $colorBlackText;
+    letter-spacing: 0.06em;
+  }
+  &__description {
+    font-size: 16px;
+    line-height: 1.9;
+    margin: 0;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    color: $colorGrey;
+    letter-spacing: 0.03em;
+  }
+  &__figcaption {
+    border-bottom: 1px solid $portfolioFigcaptionBorder;
+    border-left: 1px solid $portfolioFigcaptionBorder;
+    border-right: 1px solid $portfolioFigcaptionBorder;
+    overflow: hidden;
+    position: relative;
+    height: 110px;
+    background-color: $colorWhite;
+  }
+}

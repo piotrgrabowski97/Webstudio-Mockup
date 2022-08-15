@@ -1,0 +1,81 @@
+.team {
+  background: $colorLightgreyBg;
+  &__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: $colorBlackText;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    width: 270px;
+    background: $colorWhite;
+    box-shadow: $teamItemShadow;
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__img {
+    display: block;
+  }
+  &__name {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $colorBlackText;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0;
+  }
+  &__description {
+    font-size: 16px;
+    line-height: 1.2;
+    color: $colorGrey;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding-bottom: 16px;
+  }
+  &__socials {
+    padding-bottom: 30px;
+  }
+  &__socials-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  &__socials-item {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: $svgGreyFill;
+    transition: background 250ms, fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      fill: $colorWhite;
+      background-color: $colorBlue;
+      cursor: pointer;
+    }
+    &:focus {
+      fill: $colorWhite;
+      background-color: $colorBlue;
+      cursor: pointer;
+    }
+  }
+  &__socials-svg {
+    width: 20px;
+    height: 20px;
+  }
+}

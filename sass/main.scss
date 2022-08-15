@@ -1,0 +1,45 @@
+@import "utils/variables";
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  background: $colorBackground;
+  color: $colorBlackLogoBg;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding: 94px 0px 94px 0px;
+}
+.flex {
+  display: flex;
+}
+.active {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 42.5px;
+    background: $colorBlue;
+    height: 4px;
+    border-radius: 10px 10px 10px 10px;
+  }
+}
+@import "components/header";
+@import "components/hero";
+@import "components/description";
+@import "components/work";
+@import "components/team";
+@import "components/customers";
+@import "components/footer";
+@import "components/portfolio";
+@import "components/modal";
