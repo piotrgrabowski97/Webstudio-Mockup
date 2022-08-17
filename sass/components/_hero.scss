@@ -1,21 +1,21 @@
 .hero {
-  height: 600px;
-  background: $heroBackground;
-  background-image: url(/goit-markup-hw-07/images/background-image.jpg);
+  width: 480px;
+  height: 400px;
+  background-image: url(/images/background-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
+
   &__header {
+    width: 365px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
-    width: 696px;
     color: $colorWhite;
     text-align: center;
     text-transform: uppercase;
     margin: auto;
-    padding-top: 200px;
-    padding-bottom: 30px;
+    padding-top: 118px;
   }
   &__button {
     width: 200px;
@@ -32,6 +32,7 @@
     border-radius: 4px;
     cursor: pointer;
     margin: auto;
+    margin-top: 30px;
     display: block;
     transition: color 250ms, background 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

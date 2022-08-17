@@ -1,7 +1,6 @@
 @import "utils/variables";
 body {
   font-family: "Roboto", "Raleway", sans-serif;
-  background: $colorBackground;
   color: $colorBlackLogoBg;
   margin-left: auto;
   margin-right: auto;
@@ -12,6 +11,7 @@ body {
   padding: 0;
 }
 .container {
+  min-width: 320px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -35,6 +35,7 @@ body {
   }
 }
 @import "components/header";
+@import "components/mobile-menu";
 @import "components/hero";
 @import "components/description";
 @import "components/work";

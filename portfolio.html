@@ -19,12 +19,17 @@
     <title>WebStudio - Portfolio</title>
   </head>
 
-  <body class="center">
+  <body>
     <header class="header">
-      <div class="container flex">
+      <div class="container header__flex">
         <h2 class="header__logo">
           Web<span class="header__logo-span">Studio</span>
         </h2>
+        <button class="header__button js-open-menu">
+          <svg width="24" height="16">
+            <use href="/images/icons.svg#hamburger-icon"></use>
+          </svg>
+        </button>
         <nav class="header__nav">
           <ul class="list header__nav-list">
             <li>
@@ -44,9 +49,7 @@
           <li>
             <a class="header__contact-link" href="mailto:info@devstudio.com">
               <svg class="header__contact-svg" width="16" height="12">
-                <use
-                  href="/goit-markup-hw-07/images/icons.svg#email-icon"
-                ></use>
+                <use href="/images/icons.svg#email-icon"></use>
               </svg>
               info@devstudio.com
             </a>
@@ -54,9 +57,7 @@
           <li>
             <a class="header__contact-link" href="tel:+48111111111">
               <svg class="header__contact-svg" width="10" height="16">
-                <use
-                  href="/goit-markup-hw-07/images/icons.svg#phone-icon"
-                ></use>
+                <use href="/images/icons.svg#phone-icon"></use>
               </svg>
               +48 111 111 111
             </a>
@@ -336,36 +337,28 @@
               <li class="footer-socials__item">
                 <a class="footer-socials__svg" href="#">
                   <svg width="20" height="20">
-                    <use
-                      href="/goit-markup-hw-07/images/icons.svg#instagram-logo"
-                    ></use>
+                    <use href="/images/icons.svg#instagram-logo"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-socials__item">
                 <a class="footer-socials__svg" href="#">
                   <svg width="20" height="20">
-                    <use
-                      href="/goit-markup-hw-07/images/icons.svg#twitter-logo"
-                    ></use>
+                    <use href="/images/icons.svg#twitter-logo"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-socials__item">
                 <a class="footer-socials__svg" href="#">
                   <svg width="20" height="20">
-                    <use
-                      href="/goit-markup-hw-07/images/icons.svg#facebook-logo"
-                    ></use>
+                    <use href="/images/icons.svg#facebook-logo"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-socials__item">
                 <a class="footer-socials__svg" href="#">
                   <svg width="20" height="20">
-                    <use
-                      href="/goit-markup-hw-07/images/icons.svg#linkedin-logo"
-                    ></use>
+                    <use href="/images/icons.svg#linkedin-logo"></use>
                   </svg>
                 </a>
               </li>
@@ -394,14 +387,57 @@
             <button class="footer-newsletter__button" type="submit">
               <span class="footer-newsletter__text">Zapisz się</span>
               <svg class="footer-newsletter__svg" width="24" height="24">
-                <use
-                  href="/goit-markup-hw-07/images/icons.svg#form-plane-icon"
-                ></use>
+                <use href="/images/icons.svg#form-plane-icon"></use>
               </svg>
             </button>
           </form>
         </section>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu__button js-close-menu">
+        <svg width="19" height="19">
+          <use href="/images/icons.svg#form-x-icon"></use>
+        </svg>
+      </button>
+      <ul class="list mobile-menu__nav">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="/index.html">Agencja</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="/portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">Kontakt</a>
+        </li>
+      </ul>
+      <ul class="list mobile-menu__contact">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__phone" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="list mobile-menu__socials">
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link" href="#">Instagram</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link" href="#">Twitter</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link" href="#">Facebook</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script src="/mobile-menu.js"></script>
   </body>
 </html>
