@@ -180,6 +180,60 @@
     margin-left: 24px;
   }
 }
-.footer-flex {
-  flex-flow: column;
+
+@media (min-width: 768px) {
+  .footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-contacts {
+    padding-left: 63.5px;
+  }
+  .footer-socials {
+    padding-top: 70px;
+    padding-left: 204px;
+  }
+  .footer-newsletter {
+    padding-left: 166px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-flex {
+    flex-wrap: nowrap;
+  }
+  .footer-contacts {
+    padding-left: 15px;
+  }
+  .footer {
+    &__logo {
+      text-align: start;
+    }
+    &__item {
+      text-align: start;
+    }
+  }
+  .footer-socials {
+    padding-top: 72px;
+    padding-left: 70px;
+    &__header {
+      text-align: start;
+    }
+  }
+  .footer-newsletter {
+    padding-top: 72px;
+    padding-left: 78px;
+    &__form {
+      flex-flow: row;
+    }
+    &__label {
+      text-align: start;
+    }
+    &__input {
+      width: 358px;
+    }
+    &__button {
+      margin-top: 35px;
+      margin-left: 12px;
+    }
+  }
 }
