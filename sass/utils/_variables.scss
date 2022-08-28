@@ -9,6 +9,10 @@ $svgGreyFill: #afb1b8;
 $svgBackground: rgba(255, 255, 255, 0.1);
 $headerBorder: 1px solid #ececec;
 $heroBackground: rgba(47, 48, 58, 0.4);
+$heroBackgroundGradient: linear-gradient(
+  hsla(235, 10%, 21%, 0.4),
+  hsla(235, 10%, 21%, 0.4)
+);
 $heroButtonShadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 $workFigcaptionBg: rgba(47, 48, 58, 0.8);
 $teamItemShadow: 0px 1px 3px rgba(0, 0, 0, 0.12),

@@ -2,6 +2,7 @@
   background-color: $colorWhite;
   &__list {
     display: flex;
+    flex-flow: column;
     justify-content: space-around;
     gap: 30px;
     padding-left: 15px;
@@ -9,7 +10,7 @@
   }
   &__svg {
     display: flex;
-    width: 270px;
+    max-width: 450px;
     height: 120px;
     justify-content: center;
     align-items: center;
@@ -19,19 +20,51 @@
   &__header {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.1;
+    line-height: 1.14;
     text-transform: uppercase;
     color: $colorBlackText;
     letter-spacing: 0.03em;
     margin: 0;
     padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
   }
   &__text {
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.71;
     color: $colorGrey;
     letter-spacing: 0.03em;
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .description {
+    padding-bottom: 45px;
+    &__svg {
+      width: 354px;
+    }
+    &__header {
+      text-align: start;
+    }
+    &__item {
+      width: 354px;
+    }
+    &__list {
+      flex-flow: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .description {
+    &__list {
+      flex-wrap: nowrap;
+    }
+    &__svg {
+      width: 270px;
+    }
+    &__item {
+      width: 270px;
+    }
   }
 }

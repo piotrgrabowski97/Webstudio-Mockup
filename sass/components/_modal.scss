@@ -12,8 +12,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     transform: translate(-50%, -50%);
     background-color: $colorWhite;
     box-shadow: $modalShadow;
@@ -50,7 +50,7 @@
     margin: 0;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: $colorBlackText;
@@ -70,7 +70,7 @@
     color: $colorGrey;
   }
   &__input {
-    width: 448px;
+    width: 370px;
     height: 40px;
     border: $modalInputBorder;
     border-radius: 4px;
@@ -85,7 +85,7 @@
   }
   &__textarea {
     resize: none;
-    width: 448px;
+    width: 370px;
     height: 120px;
     border: $modalTextareaBorder;
     border-radius: 4px;
@@ -164,8 +164,8 @@
     }
   }
   &__checkbox-text {
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: $colorGrey;
   }
@@ -190,7 +190,7 @@
     border-radius: 4px;
     background: $colorLightgreyBg;
     border: $colorLightgreyBg;
-    margin-left: 164px;
+    margin-left: 125px;
     text-align: center;
     align-items: center;
     font-weight: 700;
@@ -215,4 +215,25 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+@media (min-width: 1200px) {
+  .modal {
+    &__content {
+      width: 528px;
+      height: 581px;
+    }
+    &__input {
+      width: 448px;
+    }
+    &__textarea {
+      width: 448px;
+    }
+    &__checkbox-text {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+    &__button {
+      margin-left: 164px;
+    }
+  }
 }

@@ -4,27 +4,15 @@
   background-color: $colorWhite;
   &__logo {
     font-family: "Raleway", sans-serif;
-    font-size: 26px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 1.16;
     color: $colorBlue;
     text-decoration: none;
     letter-spacing: 0.03em;
-    padding-left: 15px;
-
     margin: 0;
   }
   &__logo-span {
     color: $colorBlackLogoBg;
-  }
-  &__nav {
-    padding-left: 93px;
-    padding-top: 32px;
-  }
-  &__nav-list {
-    display: flex;
-    gap: 46px;
-    width: 254px;
-    height: 48px;
   }
   &__nav-link {
     font-weight: 500;
@@ -43,16 +31,26 @@
       color: $colorBlue;
     }
   }
-  &__contact-list {
-    display: flex;
-    padding-left: 345px;
+  &__nav {
     padding-top: 32px;
-    gap: 30px;
+  }
+  &__nav-list {
+    display: flex;
+    gap: 60px;
+    height: 48px;
+  }
+  &__contact-list {
+    height: 80px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    padding-top: 21px;
+    gap: 10px;
   }
   &__contact-link {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
+    font-size: 12px;
+    line-height: 1.16;
     color: $colorGrey;
     text-decoration: none;
     letter-spacing: 0.02em;
@@ -72,7 +70,7 @@
     }
   }
   &__contact-svg {
-    margin-right: 10px;
+    margin-right: 8px;
   }
   &__button {
     min-height: 40px;
@@ -87,7 +85,6 @@
     border: none;
     border-radius: 50%;
     outline: none;
-    margin-right: 15px;
     transition: fill 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     fill: $svgGreyFill;
@@ -103,9 +100,10 @@
     align-items: center;
     justify-content: space-between;
     min-height: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
-
 @media (max-width: 767px) {
   .header__nav {
     display: none;
@@ -114,9 +112,28 @@
     display: none;
   }
 }
-
 @media (min-width: 768px) {
-  .header__button {
-    display: none;
+  .header {
+    height: 80px;
+    &__button {
+      display: none;
+    }
+    &__flex {
+      height: 80px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    &__contact-list {
+      flex-flow: row;
+      padding-top: 32px;
+    }
+    &__contact-svg {
+      margin-right: 10px;
+    }
+    &__contact-link {
+      font-size: 14px;
+    }
   }
 }

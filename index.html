@@ -79,7 +79,7 @@
       <section class="description section">
         <div class="container">
           <ul class="list description__list">
-            <li>
+            <li class="description__item">
               <div class="description__svg">
                 <svg width="70" height="70">
                   <use href="/images/icons.svg#text-icon1"></use>
@@ -91,7 +91,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="description__item">
               <div class="description__svg">
                 <svg width="70" height="70">
                   <use href="/images/icons.svg#text-icon2"></use>
@@ -103,7 +103,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="description__item">
               <div class="description__svg">
                 <svg width="70" height="70">
                   <use href="/images/icons.svg#text-icon3"></use>
@@ -115,7 +115,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="description__item">
               <div class="description__svg">
                 <svg width="70" height="70">
                   <use href="/images/icons.svg#text-icon4"></use>
@@ -183,13 +183,37 @@
           <h2 class="team__header">Nasz zespół</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/img4.jpg"
-                alt="Picture of John Doe"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="images/img4-desktop.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/img4-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/img4-tablet.jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/img4-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/img4-mobile.jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="images/img4-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__img"
+                  src="/images/img4-desktop.jpg"
+                  alt="Picture of John Doe"
+                />
+              </picture>
               <p class="team__name">John Doe</p>
               <p class="team__description">Product Designer</p>
               <div class="team__socials">
@@ -226,13 +250,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/img5.jpg"
-                alt="Picture of John Doe"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="images/img5-desktop.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/img5-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/img5-tablet.jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/img5-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/img5-mobile.jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="images/img5-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__img"
+                  src="/images/img5-desktop.jpg"
+                  alt="Picture of John Doe"
+                />
+              </picture>
               <p class="team__name">John Doe</p>
               <p class="team__description">Frontend Developer</p>
               <div class="team__socials">
@@ -269,13 +317,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/img6.jpg"
-                alt="Picture of John Doe"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="images/img6-desktop.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/img6-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/img6-tablet.jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/img6-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/img6-mobile.jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="images/img6-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__img"
+                  src="/images/img6-desktop.jpg"
+                  alt="Picture of John Doe"
+                />
+              </picture>
               <p class="team__name">John Doe</p>
               <p class="team__description">Marketing</p>
               <div class="team__socials">
@@ -312,13 +384,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/img7.jpg"
-                alt="Picture of John Doe"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="images/img7-desktop.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/img7-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/img7-tablet.jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/img7-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/img7-mobile.jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="images/img7-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__img"
+                  src="/images/img7-desktop.jpg"
+                  alt="Picture of John Doe"
+                />
+              </picture>
               <p class="team__name">John Doe</p>
               <p class="team__description">UI Designer</p>
               <div class="team__socials">
@@ -398,7 +494,7 @@
     </main>
 
     <footer class="footer" id="footer">
-      <div class="container flex">
+      <div class="container footer-flex">
         <section>
           <ul class="list">
             <li>
@@ -416,7 +512,7 @@
                 >info@example.com</a
               >
             </li>
-            <li>
+            <li class="footer__item">
               <a class="footer__phone" href="tel:+48111111111"
                 >+48 111 111 111</a
               >

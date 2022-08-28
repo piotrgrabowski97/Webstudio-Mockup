@@ -39,3 +39,8 @@
     background: $workFigcaptionBg;
   }
 }
+@media (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
