@@ -3,14 +3,14 @@
   max-width: 480px;
   min-width: 320px;
   height: 400px;
-  background-image: $heroBackgroundGradient, url(/images/bg-image-mobile.jpg);
+  background-image: $heroBackgroundGradient, url(../images/bg-image-mobile.jpg);
   margin: auto;
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url(/images/bg-image-mobile@x2.jpg);
+      background-image: url(../images/bg-image-mobile@x2.jpg);
     }
   }
   background-position: center;
@@ -59,14 +59,14 @@
 }
 @media (min-width: 768px) {
   .hero {
-    background-image: $heroBackgroundGradient, url(/images/bg-image-tablet.jpg);
+    background-image: $heroBackgroundGradient, url(../images/bg-image-tablet.jpg);
     max-width: 768px;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       .main-banner {
-        background-image: url(/images/bg-image-tablet@x2.jpg);
+        background-image: url(../images/bg-image-tablet@x2.jpg);
       }
     }
   }
@@ -75,7 +75,7 @@
   .hero {
     max-width: 1600px;
     height: 600px;
-    background-image: $heroBackgroundGradient, url(/images/bg-image-desktop.jpg);
+    background-image: $heroBackgroundGradient, url(../images/bg-image-desktop.jpg);
     &__header {
       width: 696px;
       font-size: 44px;
@@ -85,6 +85,6 @@
 }
 @media (min-device-input-ratio: 3), (min-resolution: 288dpi) {
   .hero {
-    background-image: url(/images/bg-image-desktop@x2.jpg);
+    background-image: url(../images/bg-image-desktop@x2.jpg);
   }
 }
