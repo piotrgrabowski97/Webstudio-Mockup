@@ -122,7 +122,9 @@
     text-align: center;
   }
   &__input {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
+    min-width: 320px;
     height: 50px;
     font-size: 16px;
     line-height: 1.25;
@@ -195,6 +197,9 @@
   }
   .footer-newsletter {
     padding-left: 166px;
+    &__input {
+      width: 450px;
+    }
   }
 }
 @media (min-width: 1200px) {

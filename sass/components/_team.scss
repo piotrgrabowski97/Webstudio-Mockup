@@ -18,8 +18,10 @@
     gap: 30px;
   }
   &__item {
-    width: 450px;
-    height: 622px;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    max-height: 622px;
     background: $colorWhite;
     box-shadow: $teamItemShadow;
     border-radius: 0px 0px 4px 4px;
