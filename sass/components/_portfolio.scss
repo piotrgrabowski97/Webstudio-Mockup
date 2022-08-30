@@ -128,12 +128,18 @@
       justify-content: center;
       padding-bottom: 30px;
     }
+    &__item {
+      max-width: 354px;
+    }
   }
 }
 @media (min-width: 1200px) {
   .portfolio {
     &__button-list {
       padding-bottom: 50px;
+    }
+    &__item {
+      max-width: 370px;
     }
   }
 }

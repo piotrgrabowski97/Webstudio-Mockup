@@ -978,10 +978,16 @@ body {
             justify-content: center;
     padding-bottom: 30px;
   }
+  .portfolio__item {
+    max-width: 354px;
+  }
 }
 @media (min-width: 1200px) {
   .portfolio__button-list {
     padding-bottom: 50px;
+  }
+  .portfolio__item {
+    max-width: 370px;
   }
 }
 .modal {
